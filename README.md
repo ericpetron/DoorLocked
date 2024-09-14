@@ -1,5 +1,7 @@
 # DoorLocked
 
+![1726273540844](images/README/1726273540844.png)
+
 Using the GPIO on a Raspberry Pi to complete a circuit, a simple web server determines if a door is locked or not
 
 ## Important
