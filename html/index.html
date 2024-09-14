@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./bootstrap.css">
+        
+        <style>
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin: 0;
+                background-color: #030424;
+            }
+    
+            .circle {
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 20px;
+                font-weight: bold;
+                color: white;
+                background-color: red;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <div id="circle" class="circle">UNLOCKED</div>
+        
+        <script>
+            window.onload = function() {
+                const ele = document.querySelector(".circle");
+                const isLocked = false;
+                if (isLocked) {
+                    ele.style.backgroundColor = "green"
+                    const text = document.getElementById("circle");
+                    text.innerText = "LOCKED"
+                } 
+            }
+            
+        </script>
+        <script src="" async defer></script>
+    </body>
+</html>
